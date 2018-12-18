@@ -1,0 +1,12 @@
+.red {
+  color: red;
+  font-size: 20px;
+}
+.important {
+    color: green;
+    font-style: italic;
+  }
+  #article-title {
+    font-family: Georgia, serif;
+    color: #1050ff;
+  }

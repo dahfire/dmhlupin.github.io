@@ -1,24 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Про индейцев</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css" >
-  </head>
-  <body>
-	<a href="case1.html">link 1</a>
-    <h1 id="article-title">Про индейцев</h1>
-    <h3>История</h3>
-        <p class="red">На территории, где ныне расположен Нью-Йорк, задолго
-            до появления здесь европейцев жили индейские племена
-            Манахаттоу и Канарси.
-        </p>
-        <p>Это подтверждают находки наконечников стрел и
-            других артефактов в районах города, не застроенных          
-            зданиями, например, Инвуд-Хилл-парк и Риверсайд-парк.
-        </p>
-        <p class="red">
-            Европейские поселения появились здесь в 1624 году.
-        </p>
-  </body>
+<head>
+	<meta charset = "utf-8-8">
+	<title>Hello, world!</title>
+	<script>
+		function btnClick() {
+			var txt1 = "";
+			var txt2 = "";
+			var elem = document.getElementById('ex1');
+			txt1 = document.Text.bt.value;
+			txt2 = document.Text.bt.name;
+			elem.innerHTML = "<HR>" + "Вы нажали кнопку " + txt1.bold() + " с именем: " + txt2.bold() + "<HR>";
+			elem.style.background = 'red';
+			elem.innerHTML = elem.innerHTML + "Hello, World"
+			// GetElementById
+			
+		};
+		function sqr2() {
+			var elem = document.getElementById('ex2');
+			elem.innerHTML = '2 в степени Х: <br><ol>'; 
+			for (let count = 0; count <= 10; count++) {
+				elem.innerHTML = elem.innerHTML + "<li>" + 2**count + "</li>";
+				//if (count === 10) elem.innerHTML = elem.innerHTML + "</ol>";
+			}
+			
+		};
+	</script>
+</head>
+<body>
+	<div class = "main">
+		<h1>Нажатие кнопки</h1>
+		<form Name="Text">
+			<input type="button" name="bt" value="click me!"
+			onclick="btnClick();">
+			<input type="button" name="bt2" value="2*2*2..."
+			onclick="sqr2();">
+		</form>
+		<div id="ex1">
+		</div >
+		<div id="ex2">
+		</div>
+	</div>
+</body>
 </html>
